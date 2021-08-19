@@ -1,17 +1,17 @@
 stages:
-- name: APP--GitHub2GitLab
-  steps:
-  - applyAppConfig:
-      name: ${CICD_GIT_REPO_NAME}-github2gitlab
-      targetNamespace: ${CICD_GIT_REPO_NAME}
-      catalogTemplate: cattle-global-data:iii-dev-charts3-dev-github2gitlab
-      version: 0.1.0
-      answers:
-        gitlab.url: http://gitlab-iso3.iiidevops.org
-        gitlab.token: nQ51ATrfcvzEVtSJA122
-        gitlab.repo: root/github-mirror
-        github.token: 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
-        github.repo: corilin/datatoolbox
+#- name: APP--GitHub2GitLab
+#  steps:
+#  - applyAppConfig:
+#      name: ${CICD_GIT_REPO_NAME}-github2gitlab
+#      targetNamespace: ${CICD_GIT_REPO_NAME}
+#      catalogTemplate: cattle-global-data:iii-dev-charts3-dev-github2gitlab
+#      version: 0.1.0
+#      answers:
+#        gitlab.url: http://gitlab-iso3.iiidevops.org
+#        gitlab.token: nQ51ATrfcvzEVtSJA122
+#        gitlab.repo: root/github-mirror
+#        github.token: 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
+#        github.repo: corilin/datatoolbox
 - name: Test--SonarQube source code scan
   steps:
   - applyAppConfig:
