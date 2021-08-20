@@ -12,7 +12,7 @@ stages:
         gitlab.repo: root/github-mirror
         github.token: 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
         github.repo: corilin/datatoolbox
-        sync.minute: 8
+        sync.minute: 15
 - name: Test--SonarQube source code scan
   steps:
   - applyAppConfig:
